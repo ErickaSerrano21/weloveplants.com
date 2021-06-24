@@ -1,0 +1,139 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div class="header" id="myHeader">
+<ul>
+<li align="center"><a href="index.html">Home</a></li>
+</li>
+<li><a >More Information</a>
+  <ul>
+    <li><a href="main.html">Plant Wikipedia</a></li>
+    <li><a href="mi.html">History</a></li>
+  </ul>
+</li>
+<li>Category
+  <ul>
+    <li><a href="indoor.html">Indoor Plants</a></li>
+    <li><a href="outdoor.html">Outdoor Plants</a></li>
+  </ul>
+</li>
+<li><a href="wala.html">Photography</a></li>
+<li>About
+  <ul>
+    <li><a href="tl.html">Our Team</a></li>
+    <li><a href="ref.html">References</a></li>
+  </ul>
+</li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul></div>
+<div class="content">
+<div class="row">
+  <div class="column middle" style="background-color:#A9A9A9;">
+    <h1 align="center" style="background-color:#32CD32;"><FONT color="yellow">PLANTS</FONT></h1></p>
+    <p align="center">
+      <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img\e.jpg" style="width:100%">
+  <div class="text">"Love and work are to people what water and sunshine are to plants."</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img\11.jpg" style="width:100%">
+  <div class="text">"Flower will not grow, if the stem doesn't allow"</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img\d.jpg" style="width:100%">
+  <div class="text">"What we plant in the soil of contemplation, we shall reap in the harvest of action"</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    <p><b>Plants</b> are one of six big groups <a href="https://simple.wikipedia.org/wiki/Kingdom_(biology)">(kingdoms)</a> of living things. They are <a href="https://simple.wikipedia.org/wiki/Autotroph">autotrophic</a><a href="https://simple.wikipedia.org/wiki/Eukaryote"> eukaryotes</a>, which means they have complex cells, and make their own food. Usually they cannot move (not counting growth).<BR><br>
+
+Plants include familiar types such as trees, herbs, bushes, grasses, vines, ferns, mosses, and green algae. The scientific study of plants, known as botany, has identified about 350,000 extant (living) species of plants. Fungi and non-green algae are not classified as plants.<BR><BR>
+
+Most plants grow in the ground, with stems in the air and roots below the surface. Some float on water. The root part absorbs water and some nutrients the plant needs to live and grow. These climb the stem and reach the leaves. The evaporation of water from pores in the leaves pulls water through the plant. This is called transpiration.<BR><BR>
+
+A plant needs sunlight, carbon dioxide, minerals and water to make food by photosynthesis. A green substance in plants called chlorophyll traps the energy from the Sun needed to make food. Chlorophyll is mostly found in leaves, inside plastids, which are inside the leaf cells. The leaf can be thought of as a food factory. Leaves of plants vary in shape and size, but they are always the plant organ best suited to capture solar energy. Once the food is made in the leaf, it is transported to the other parts of the plant such as stems and roots.<BR><BR>
+
+The word "plant" can also mean the action of putting something in the ground. For example, farmers plant seeds in the field.<BR><BR>
+
+Photosynthesis is a process that is taken place by the leaves on the plant. The leaves are the only parts of a plant that can do this process (as they adapted). This is also known as how the plant gets its food.You can make the process quicker by adding more CO2, light and chlorophyll.</p><br>
+</div>
+
+  <div class="column right" style="background-color:  #808080;">
+     <h1 align="center" style="background-color: #32CD32;"><FONT color="yellow">PICTURES</FONT></h1></p>
+<p align="center">
+     <h3 align="center" style="background-color: #2ECC71;"><FONT color="black">Plants
+Temporal range: <a href="https://simple.wikipedia.org/wiki/Mesoproterozoic">Mesoproterozoic–<br>present</a></FONT></h3></p>
+<p align="center">
+  <img align="center" src="img\b.png" alt="HTML5 Icon" width="250" height="280">
+</p><br>
+   <h3 align="center" style="background-color: #2ECC71;"><FONT color="black"><a href="https://simple.wikipedia.org/wiki/Taxonomy">SCIENTIFIC CLASSIFICATION</a></FONT></h3></p>
+    <p align="center">
+    <img src="img\asd.png" alt="HTML5 Icon" width="250" height="270">
+  </p>
+    <h3 align="center" style="background-color: #2ECC71;"><FONT color="black">A picture of a Grassy grass plant</FONT></h3></p><br><br>
+  </div>
+</div>
+</div>
+<footer>
+<div class="ftop">
+Copyright &copy; 2021 - All rights reserved
+<br> <a href="#">Terms & Conditions</a>
+</div>
+<div class="fbottom">
+</div>
+</footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+	font-family: tahoma;
+	margin: 
+}
+button{
+	cursor: pointer;
+}
+#portfolio{
+	width: 50%;
+	min-height: 100vh;
+	background:white;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4 minmax(200px, 1fr));
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 2px;
+}
+.project{
+	position: relative;
+	background: #f2dad7;
+	overflow: hidden;
+}
+.project img{
+	position: absolute;
+	opacity: 0.9;
+}
+.project:hover .grid-overlay{
+	transform: translateY(0%);
+}
